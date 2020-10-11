@@ -149,6 +149,112 @@ article {
   .btn-outline-dark {
     border-radius: 10px;
     padding: 12px 55px;
+    font-family: Open Sans;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    /* identical to box height */
+
+    color: #202117;
+  }
+
+  .portfolio {
+    .portfolio-item {
+      position: relative;
+      width: 387px;
+      height: 525px;
+      background-position: center;
+      background-size: cover;
+      border-radius: 10px;
+      filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
+      overflow: hidden;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+
+      .backdrop {
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        filter: blur(10px);
+      }
+
+      .content {
+        height: 100%;
+        padding: 20px 50px;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #2e2f22;
+
+        font-family: Spectral SC;
+
+        * {
+          text-align: center;
+        }
+
+        h3 {
+          margin-bottom: 44px;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 30px;
+        }
+        h4 {
+          margin-bottom: 16px;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 28px;
+        }
+        p {
+          font-family: Open Sans;
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+
+  .feedback-form {
+    background-position: center;
+    background-size: cover;
+    width: 996px;
+    height: 637px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+
+    label {
+      font-family: Spectral SC;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 28px;
+      color: #2e2f22;
+    }
+
+    input,
+    textarea {
+      background: rgba(255, 255, 255, 0.4);
+      border: 1px solid #202117;
+      border-radius: 10px;
+    }
+
+    input {
+      width: 407px;
+      height: 63px;
+    }
+
+    textarea {
+      width: 837px;
+      height: 293px;
+    }
   }
 }
 
